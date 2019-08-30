@@ -94,6 +94,7 @@
     color: #696973;
     margin-top: 5px; }
   .t__descr {
+    max-width: 300px;
     line-height: 1.37;
     font-size: 16px;
     text-align: center;
@@ -333,9 +334,22 @@
   font-weight: 600;
   color: #393939;
   border: none;
-  width: 100%; }
-  .input:placeholder,
-  .textarea:placeholder {
+  width: 100%;
+  font-size: 16px; }
+  .input::-webkit-input-placeholder,
+  .textarea::-webkit-input-placeholder {
+    font-size: 14px; }
+  .input::-moz-placeholder,
+  .textarea::-moz-placeholder {
+    font-size: 14px; }
+  .input:-ms-input-placeholder,
+  .textarea:-ms-input-placeholder {
+    font-size: 14px; }
+  .input::-ms-input-placeholder,
+  .textarea::-ms-input-placeholder {
+    font-size: 14px; }
+  .input::placeholder,
+  .textarea::placeholder {
     font-size: 14px; }
   .input:hover,
   .textarea:hover {
